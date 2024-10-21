@@ -1,0 +1,103 @@
+/* Estilo para o painel raiz (StackPane) */
+#stackPane {
+    -fx-background-color: #f2f2f2;
+    -fx-padding: 20px;
+    -fx-alignment: CENTER;
+    -fx-font-size: 16px;
+}
+
+/* Estilo para o rótulo MY TASKS */
+.title-label {
+    -fx-font-size: 3em;
+    -fx-text-fill: #333333;
+}
+
+/* Estilo para a lista de tarefas */
+#taskListView {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+}
+
+/* Estilo para os elementos de tarefa na lista */
+.list-cell {
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+}
+
+/* Estilo para a checkbox selecionada */
+/* Estilo para a checkbox (redonda) */
+.check-box > .box {
+    -fx-background-radius: 50%; /* Torna o ícone circular */
+    -fx-background-color: white; /* Cor de fundo quando selecionada */
+    -fx-border-color: #a1a1a1; /* Cor do contorno (border) */
+    -fx-border-radius: 50%;
+    -fx-border-width: 2; /* Largura do contorno */
+}
+
+.check-box:selected > .box {
+    -fx-background-color: white; /* Cor de fundo quando selecionada */
+}
+
+/* Estilo para a etiqueta da tarefa */
+.list-cell .label {
+    -fx-font-size: 1.5em;
+    -fx-text-fill: #333333;
+}
+
+/* Estilo para o menu suspenso Priority */
+.priority-label {
+    -fx-pref-width: 100px;
+}
+
+.priority-combo-box {
+    -fx-pref-width: 150px;
+}
+
+/* Estilo para o botão Add Task */
+.custom-button {
+    -fx-background-color: #0073e6;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1em;
+}
+
+/* Estilo para a caixa personalizada (Priority Label + ComboBox) */
+.custom-box {
+    -fx-spacing: 10px;
+}
+
+/* Estilo para a ComboBox */
+#orderBy {
+    -fx-background-color: #ffffff; /* Cor de fundo padrão */
+}
+
+/* Estilo para as opções na ComboBox */
+#orderBy .list-cell {
+    -fx-background-color: #ffffff; /* Cor de fundo padrão para as opções */
+}
+
+/* Estilo para as opções na ComboBox quando o mouse passa sobre elas */
+#orderBy .list-cell:hover {
+    -fx-background-color: #0073e6; /* Cor de fundo ao passar o mouse sobre a opção */
+    -fx-text-fill: #ffffff; /* Cor do texto ao passar o mouse sobre a opção */
+}
+
+#orderBy .text{
+    -fx-fill: #000000;
+}
+
+.undoButton {
+    -fx-background-color: #AB0404; /* Cor de fundo */
+    -fx-text-fill: white; /* Cor do texto */
+    -fx-font-size: 14px; /* Tamanho da fonte */
+    -fx-cursor: hand;
+}
+
+.undoButton:hover {
+    -fx-background-color: #8C0505; /* Cor de fundo ao passar o mouse */
+}
+
+.checkbox {
+    -fx-cursor: hand;
+}

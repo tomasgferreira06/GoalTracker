@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gps_g12.calculator.CalculatorController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="result" GridPane.columnSpan="4" style="-fx-font-size: 20;" />
+
+    <!-- Digit Buttons -->
+    <Button text="1" onAction="#onNumberClick" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Button text="2" onAction="#onNumberClick" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Button text="3" onAction="#onNumberClick" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Button text="4" onAction="#onNumberClick" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Button text="5" onAction="#onNumberClick" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Button text="6" onAction="#onNumberClick" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <Button text="7" onAction="#onNumberClick" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <Button text="8" onAction="#onNumberClick" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Button text="9" onAction="#onNumberClick" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <Button text="0" onAction="#onNumberClick" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <!-- Operator Buttons -->
+    <Button text="+" onAction="#onSumButtonClick" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <Button text="-" onAction="#onMinButtonClick" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <Button text="*" onAction="#onMulButtonClick" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+    <Button text="/" onAction="#onDivButtonClick" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+    <Button text="=" onAction="#onEqualButtonClick" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+    <Button text="sqrt" onAction="#onSqrtButtonClick" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+    <Button text="cylinder volume" onAction="#onCylButtonClick" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+    <Button text="cone volume" onAction="#onConeButtonClick" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+    <Button text="factorial" onAction="#onFactorialButtonClick" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+    <Button text="fibonacci" onAction="#onFibonacciButtonClick" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+    <Button text="Date" onAction="#onDateButtonClick" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+    <Button text="BinToHex" onAction="#onBinToHexButtonClick" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+    <Button text="HexToBin" onAction="#onHexToBinButtonClick" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+
+    <!-- Clear Button -->
+    <Button text="C" onAction="#onClearButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+
+    <!-- Alphabet -->
+    <Button text="A" onAction="#onLetterClick" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <Button text="B" onAction="#onLetterClick" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <Button text="C" onAction="#onLetterClick" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+    <Button text="D" onAction="#onLetterClick" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+    <Button text="E" onAction="#onLetterClick" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <Button text="F" onAction="#onLetterClick" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+</GridPane>
